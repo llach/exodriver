@@ -1,0 +1,9 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: @PROJECT_NAME@
+Description: communication library for labjack including u3, u6, ue9 convenience functions
+Version: @LIB_VERSION@
+Libs: -L${libdir} -llabjackusb -llabjackmodbus -llabjacku3 -llabjacku6 -llabjackue9
+Cflags: -I${includedir}
